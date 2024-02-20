@@ -38,33 +38,37 @@ body {
     object-fit: cover;
 
 }
-.flex-center-full{
+
+.flex-center-full {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.row{
+
+.row {
     flex-direction: row;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
+
 /* FIM resets gerais */
 
 /* ================ HEADER =================== */
-header ul li a{
+header ul li a {
     padding: 10px;
-    color:var(--wine);
+    color: var(--wine);
     transition: all 0.3s;
 }
 
-header ul li a.item-menu:hover{
+header ul li a.item-menu:hover {
     background: var(--wine);
     color: var(--yellow);
 }
 
-header{
+header {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -72,7 +76,7 @@ header{
     flex-direction: column;
 }
 
-header ul{
+header ul {
     background: var(--yellow);
     display: flex;
     justify-content: space-between;
@@ -82,11 +86,11 @@ header ul{
     height: 55px;
     min-width: 800px;
 
-    
+
 }
 
 
-header ul li{
+header ul li {
     list-style: none;
     font-family: "Rum Raisin", sans-serif;
     font-size: 2.2rem;
@@ -97,12 +101,16 @@ header ul li{
 
 
 /* =========== LINKS AND BUTTONS ============== */
-a{
+a {
     text-decoration: none;
 }
 
+.box-arrow-down a{
+    color: var(--yellow);
+}
 
-button{
+
+button {
     background: var(--yellow);
     cursor: pointer;
 
@@ -120,7 +128,7 @@ button{
     transition: all 0.3s ease;
 }
 
-button:hover{
+button:hover {
     background: #fff;
     color: var(--wine);
     padding: 10px 50px;
@@ -131,7 +139,7 @@ button:hover{
 
 
 /* ============= TITLES ================ */
-.titulo-banner h1{
+.titulo-banner h1 {
     font-family: "Rum Raisin", sans-serif;
     font-weight: normal;
     font-size: 5rem;
@@ -143,12 +151,29 @@ button:hover{
 
 
 /* =============== BANNER ============== */
-.slider{
+.slider {
     display: flex;
     transition: all ease .4s;
 }
+.controls-slide{
+    margin: auto;
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
 
-.banner{
+.controls-slide i{
+    font-size: 2rem;
+    color: var(--yellow);
+    opacity: .6;
+    cursor: pointer;
+    text-shadow: 1px 1px 20px #000;
+    transition: all ease .2s;
+}
+
+.banner {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -156,29 +181,66 @@ button:hover{
     height: 75vh;
 }
 
-.img-titulo-banner img{
+.img-titulo-banner img {
     min-width: 400px;
 
 }
 
-.description-banner{
-    position:relative;
-    top:-30px;
+.description-banner {
+    position: relative;
+    top: -30px;
     max-width: 380px;
 }
 
-.left-banner p{
+.left-banner p {
     line-height: 44px;
     letter-spacing: 0.8px;
     color: #fff;
     font-family: "Rum Raisin", sans-serif;
 }
 
-.description-banner p:first-child{
+/*first-child = seleciona o primeiro filho dentro do elemento pai.
+nth-child() = permite especificar qual o elemento filho deseja ser selecionado. Exemplo:nth-child(2) irá selecionar apesar o filho na segunda posição dentro do elemento pai*/
+.description-banner p:first-child {
     font-family: "Rum Raisin", sans-serif;
     font-size: 1.9rem;
 }
 
-.d-none img{
+.d-none img {
     max-width: 600px;
-}   
+}
+
+.description-banner p{
+    font-size: 1.6rem;
+}
+
+.description-banner i{
+    margin-left: 10px;
+    font-size: 2rem;
+}
+.right-banner img{
+    max-width: 500px;
+    transition: all 0.3s;
+}
+
+.right-banner img:hover {
+    transform: scale(1.02);
+}
+.box-arrow-down {
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.box-arrow-down i {
+    text-shadow: 1px 1px 20px #000;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+.box-arrow-down i:hover, .controls-slide i:hover, .btn-cadarpio:hover,.active{
+    opacity: 1;
+}
+
+.box-arrow-down {
+    padding: 0 0 4.5rem;
+
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> 
 
 <head>
     <meta charset="UTF-8">
@@ -46,7 +46,7 @@
     </header>
     <main>
         <div class="slider">
-            <div class="container banner">
+            <div class="container banner"> 
                 <div class="flex-center-full left-banner">
                     <!-- adicionar um display flex, e direction em column -->
                     <div class="img-titulo-banner">
@@ -69,7 +69,76 @@
                     <img src="./assets/img/feijoada_banner.png" alt="feijoada">
                 </div>
             </div>
+            <div class="container banner" style="display: none;"> 
+                <div class="flex-center-full left-banner">
+                    <!-- adicionar um display flex, e direction em column -->
+                    <div class="img-titulo-banner">
+                        <h1><img src="./assets/img/frase_banner.svg" alt="Experimente nossa feijoada">
+                        </h1>
+                    </div>
+                    <div class="text-center description-banner">
+                        <p>Atendimento de Segunda à Sábado das 11h às 15h</p>
+                        <p>Fazemos também Delivery ou Retirada</p>
+
+                        <a target="_blank"
+                            href="https://api.whatsapp.com/send?phone=5519971489054&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20pedido">
+                            <button>Faça seu pedido<i class="fab fa-whatsapp"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="d-none right-banner">
+                    <img src="./assets/img/virado_a_paulista.png" alt="feijoada">
+                </div>
+            </div>
         </div>
+        <div class="controls-slide text-center">
+            <i class="fas fa-chevron-circle-left"></i>
+            <i class="fas fa-chevron-circle-right"></i>
+        </div>
+        <div class="box-arrow-down text-center">
+            <a href="#cadarpio"> <i class="fas fa-arrow-down"></i></a>
+        </div>
+        <section class="cardapio">
+            <div class="box-cardapio container">
+                <div class="days-week">
+                    <h2>Cardápio</h2>
+                    <div class="box-btn-cardapio">
+                        <a class="select-segunda"><div class="btn-cardapio">Segunda</a>
+
+                    </div>
+                    <div class="box-btn-cardapio">
+                        <a class="select-segunda"><div class="btn-cardapio">Terça</a>
+
+                    </div>
+                    <div class="box-btn-cardapio">
+                        <a class="select-segunda"><div class="btn-cardapio">Quarta</a>
+
+                    </div>
+                    <div class="box-btn-cardapio">
+                        <a class="select-segunda"><div class="btn-cardapio">Quinta</a>
+
+                    </div>
+                    <div class="box-btn-cardapio">
+                        <a class="select-segunda"><div class="btn-cardapio">Sexta</a>
+
+                    </div>
+                    <div class="box-btn-cardapio">
+                        <a class="select-segunda"><div class="btn-cardapio">Sábado</a>
+
+                    </div>
+                </div>
+                <div class="dishes-day">
+                    <div class="col-1">
+                        <h3 class="d-none">Pratos do dia</h3>
+                        <div class="box-dish-main"></div>
+                        <div class="box-dish"></div>
+                    </div>
+                    <div class="right-col col-1"></div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
     </footer>
