@@ -281,3 +281,14 @@ nth-child() = permite especificar qual o elemento filho deseja ser selecionado. 
     font-weight: 700;
     color: var(--yellow);
 }
+
+.box-btn-cardapio a:first-child{
+    margin-top: 5px;
+}
+.dishes-day{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    padding:140px 60px 20px;
+    background: rgba(229, 229, 229, 0.7);
+}
